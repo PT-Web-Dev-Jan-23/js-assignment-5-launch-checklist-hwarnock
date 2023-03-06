@@ -2,6 +2,8 @@
 
 window.addEventListener("load", function() {
     console.log("Window Loaded")
+    let list = document.getElementById("faultyItems");
+        list.style.visibility = "hidden"
     let listedPlanets;
      // Set listedPlanetsResponse equal to the value returned by calling myFetch()
     let listedPlanetsResponse = myFetch();
@@ -32,8 +34,7 @@ window.addEventListener("load", function() {
          let cargoMass = Number(cargoInput.value);
 
         //console.log(pilotInput.value);
-        let list = document.getElementById("faultyItems");
-        list.style.visibility = "hidden"
+        
         formSubmission(document, pilot, copilot, fuelLevel, cargoMass)
     });
 
