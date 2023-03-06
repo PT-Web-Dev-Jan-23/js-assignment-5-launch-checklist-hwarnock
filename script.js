@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
        let planetSelection = pickPlanet(listedPlanets);
        addDestinationInfo(document, planetSelection.name, planetSelection.diameter, planetSelection.star, planetSelection.distance, planetSelection.moons, planetSelection.image)
     })
-
+   
     let launchForm = document.getElementById("launchForm");
     launchForm.addEventListener("submit", function(submission){
          submission.preventDefault()   
@@ -32,7 +32,8 @@ window.addEventListener("load", function() {
          let cargoMass = Number(cargoInput.value);
 
         //console.log(pilotInput.value);
-
+        let list = document.getElementById("faultyItems");
+        list.style.visibility = "hidden"
         formSubmission(document, pilot, copilot, fuelLevel, cargoMass)
     });
 

@@ -56,11 +56,11 @@ function formSubmission(document, pilot, copilot, fuelLevel, cargoLevel) {
     console.log(cargoLevel);
 
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
-        throw alert("Please fill in all Information");
+        alert("Please fill in all Information");
     }
 
     else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
-        throw alert("Please enter valid data types.");
+        alert("Please enter valid data types.");
     }
 
     else {
