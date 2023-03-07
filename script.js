@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
 
         //console.log(pilotInput.value);
         
-        formSubmission(document, pilot, copilot, fuelLevel, cargoMass)
+        formSubmission(document, list, pilot, copilot, fuelLevel, cargoMass)
     });
 
 });
